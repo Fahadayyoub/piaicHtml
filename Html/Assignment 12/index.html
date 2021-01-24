@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.js"
+      integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      a.portfolio_anchor:hover{
+        color: #ffbd1a !important;
+      }
+      img.portfolio:hover{
+        width: 200px;
+      }
+      .About_US{
+        background-color: #f2f2f2;
+      
+      }
+      .callMe {
+        background-color: rgb(124, 224, 24);
+        border-radius: 5px;
+        border: 0px solid;
+        padding: 0.3%;
+        padding-left: 1%;
+        padding-right: 1%;
+        font-weight: 600;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 11px;
+      }
+      .topRightBar {
+        text-align: right;
+        padding-bottom: 3px;
+      }
+      .phoneNumber {
+        color: #ffffff;
+        letter-spacing: 1px;
+      }
+      /* .CALLmE{
+        background-color: ;
+      } */
+      .link {
+        color: black;
+        font-weight: 600;
+      }
+      a.link:hover {
+        border-bottom: 7px solid #ffbd1a !important;
+        margin-top: -5px;
+      }
+      .btn {
+        background-color: #ffbd1a !important;
+      }
+      .ourAdvantages {
+        text-align: center;
+        font-weight: 600;
+        color: black;
+      }
+    </style>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="padding: px; margin: 0%">
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".sidenav");
+        var instances = M.Sidenav.init(elems, options);
+      });
+    </script>
+    <section class="Top Header">
+      <div style="background-color: black; padding: 5px; padding-bottom: 2px">
+        <img
+          src="./Assets/socialIcons.png"
+          style="float: left; margin-top: 3px; margin-left: 20px"
+        />
+        <div class="topRightBar">
+          <img src="./Assets/phone.png" width="10px" />
+          <span class="phoneNumber">+92(304)386-619</span>
+          <img src="./Assets/phone.png" width="10px" style="margin-left: 5px" />
+          <span class="phoneNumber">+92(317)011-3001</span>
+          <button class="callMe">CALL ME BACK</button>
+        </div>
+      </div>
+    </section>
+    <section class="MainMenu" style="background-color: #ffffff !important">
+      <nav>
+        <div class="nav-wrapper" style="background-color: #ffffff !important">
+          <a href="#!" class="brand-logo"
+            ><img
+              src="./Assets/logos.png"
+              style="margin-top: 10%; margin-left: 35%"
+          /></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons" style="color: #000000">menu</i></a
+          >
+          <ul
+            class="right hide-on-med-and-down"
+            style="margin-right: 1%; color: black"
+          >
+            <li>
+              <a class="link" href="#whyUS">WHY US</a>
+            </li>
+            <li>
+              <a class="link" href="#About_US">ABOUT </a>
+            </li>
+            <li><a class="link" href="#services">SERVICES</a></li>
+            <li><a class="link" href="#PORTFOLIO">PORTFOLIO</a></li>
+            <li><a class="link" href="#PROCESS">PROCESS</a></li>
+            <li><a class="link" href="#REVIEWS">REVIEWS</a></li>
+            <li><a class="link" href="#skills">OUR SKILLS</a></li>
+            <li><a class="link" href="#contacts">CONTACT US</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li>
+          <a class="link" href="#whyUS">WHY US</a>
+        </li>
+        <li>
+          <a class="link" href="#About_US">ABOUT </a>
+        </li>
+        <li><a class="link" href="#services">SERVICES</a></li>
+        <li><a class="link" href="#PORTFOLIO">PORTFOLIO</a></li>
+        <li><a class="link" href="#PROCESS">PROCESS</a></li>
+        <li><a class="link" href="#REVIEWS">REVIEWS</a></li>
+        <li><a class="link" href="#skills">OUR SKILLS</a></li>
+        <li><a class="link" href="#contacts">CONTACT US</a></li>
+      </ul>
+    </section>
+    <section class="Slider">
+      <div
+        class="carousel carousel-slider center"
+        style="height: 500px !important"
+      >
+        <div class="carousel-fixed-item center">
+          <a
+            class="btn waves-effect white grey-text darken-text-2"
+            style="
+              background-color: #ffbd1a !important;
+              color: #000000 !important;
+              font-weight: 700 !important;
+              border-bottom: 2px solid #ffbd1a;
+            "
+            >READ MORE</a
+          >
+        </div>
+        <div
+          class="carousel-item red white-text"
+          href="#one!"
+          style="background-image: url('./Assets/slider1.jpg')"
+        ></div>
+        <div class="carousel-item amber white-text" href="#two!"
+        style="background-image: url('./Assets/slider2.jpg');  background-attachment:fixed;
+        background-repeat: no-repeat;
+        background-size: cover;"></div>
+        <div class="carousel-item green white-text" href="#three!"
+        style="background-image: url('./Assets/silder3.jpg');  background-attachment:fixed;
+        background-repeat: no-repeat;
+        background-size: cover;"></div>
+      </div>
+    </section>
+    <section class="Advantages" id="whyUS">
+      <h1 class="ourAdvantages">
+        OUR <span style="color: #668e19">ADVANTAGES</span>
+      </h1>
+      <P style="text-align: center; color: lightslategray; opacity: 0.7; font-size: 20px;">Lorem ipsum dolar sit ament, consetture sadipscing elitr, sed diam nonumy eirmod </br> tempor invidunt ut labore et dolore magna aliquyam erat</P>
+  
+      <div class="row" style="text-align: center !important; margin-left: 8%;">
+      
+         <div class="col s2" style="width: 250px;" >
+          <div style="background-color: lightslategray; border-radius: 200%; padding: 25% 5% 25% 5%;">
+            <img src="./Assets/bulb.png" style="text-align: center; vertical-align:initial; width: 27%;"/>
+          </div>
+          <p style="font-size: 28px; text-align: center; margin-top: 0px;margin-bottom: 0px;">INNOVATION</p>
+         <p style="  margin-top:0px;text-align: center; color: lightslategray; opacity: 0.7; font-size: 1.1em;">Lorem ipsum dolor sit consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+        </div>
+        <div class="col s2" style="width: 250px; ">    
+          <div style="background-color: lightslategray; border-radius: 200%; padding: 25% 5% 25% 5%;">
+            <img src="./Assets/bulb.png" style="text-align: center; vertical-align:initial; width: 27%;"/>
+          </div>
+          <p style="font-size: 28px; text-align: center; margin-top: 0px;margin-bottom: 0px;">QUALITY</p>
+          <p style="  margin-top:0px;text-align: center; color: lightslategray; opacity: 0.7; font-size: 1.1em;">Lorem ipsum dolor sit consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+        </div>
+        <div class="col s2" style="width: 250px; ">    
+          <div style="background-color: lightslategray; border-radius: 200%; padding: 25% 5% 25% 5%;">
+            <img src="./Assets/clock.png" style="text-align: center; vertical-align:initial; width: 40%;"/>
+          </div>
+          <p style="font-size: 28px; text-align: center; margin-top: 0px;margin-bottom: 0px;">EXPERIENCE</p>
+          <p style="  margin-top:0px;text-align: center; color: lightslategray; opacity: 0.7; font-size: 1.1em;">Lorem ipsum dolor sit consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+        </div>
+        <div class="col s2" style="width: 250px;">    
+          <div style="background-color: lightslategray; border-radius: 200%; padding: 25% 5% 25% 5%;">
+            <img src="./Assets/people.png" style="text-align: center; vertical-align:initial; width: 55%;"/>
+          </div >
+           <p style="font-size: 28px; text-align: center; margin-top: 0px;margin-bottom: 0px;">HAPPY CLIENTS</p>
+          <p style="  margin-top:0px;text-align: center; color: lightslategray; opacity: 0.7; font-size: 1.1em;">Lorem ipsum dolor sit consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+        </div>
+        <div class="col s2" style="width: 250px;">    
+          <div style="background-color: lightslategray; border-radius: 200%; padding: 25% 5% 25% 5%;">
+            <img src="./Assets/message.png" style="text-align: center; vertical-align:initial; width: 50%;"/>
+          </div>
+          <p style="font-size: 28px; text-align: center; margin-top: 0px;margin-bottom: 0px;">SUPPORT</p>
+          <p style="  margin-top:0px;text-align: center; color: lightslategray; opacity: 0.7; font-size: 1.1em;">Lorem ipsum dolor sit consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+        </div>
+       
+        
+      </div>
+            
+    </section>
+    <section class="About_US" id="About_US">
+      <h1 class="ourAdvantages">
+        ABOUT <span style="color: #668e19">US</span>
+      </h1>
+      <div class="row" style="padding-bottom:15px;">
+        
+        <div class="col s6" style="padding-left: 5%; color: black; font-size: 2.4vh; ">
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempr invidunt ut labore at dolore manfna aliquyam erat, sed diamvlouptua</p>
+          <p>At vero eos et accusam et justo duo dolores ea rebum. Stet ckita kasd gubergren no sea takimata sanctus est Lorem ipsem dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor incidunt ut labour et dolore magna aliquyam erat , sed diam voluptua</p>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempr invidunt ut labore at dolore manfna aliquyam erat, sed diamvlouptua At vero eos et accusam et justo duo dolores ea rebum. Stet ckita kasd gubergren no sea takimata sanctus est Lorem ipsem dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor incidunt ut labour et dolore magna aliquyam erat , sed diam voluptua</p>
+          <a style=" background-color: #ffbd1a !important;
+          color: #000000 !important;
+          font-weight: 700 !important;
+          border-bottom: 2px solid #ffbd1a;
+          padding: 4px 8px 4px 8px;"> Read More</a></div>
+        <div class="col s6" style="background-color:#d5d5d5;margin-top: -90px;  background-size: cover; background-repeat: no-repeat; background-image: url('./Assets/aboutUs.png') !important;">
+          <img src="./Assets/computer.png" style="opacity: 1.0 !important; margin-left: 15%; width: 70%; padding-top: 25%;">
+        </div>
+
+    </section>
+    <section id="services">
+      <h1 class="ourAdvantages">
+        OUR <span style="color: #668e19">SERVICES</span>
+      </h1>
+      <P style="text-align: center; color: lightslategray; opacity: 0.7; font-size: 20px;">Lorem ipsum dolar sit ament, consetture sadipscing elitr, sed diam nonumy eirmod </br> tempor invidunt ut labore et dolore magna aliquyam erat</P>
+  
+      <div class="row" style="text-align: center !important; margin-left: 4%;">
+      
+        <div class="col s2" style="width: 300px; background-color: #f2f2f2; padding: 0% 3% 2% 3%; margin-left: 2%; margin-top: 40px; " >
+          <div  style="padding:10px;background-color: #ffbd1a; border-radius: 200%; width:70px;  margin-left: 37%; margin-top: -28px;"> <img src="./Assets/star.png" height="40px"/></div>
+          <h5>WEB DESIGN</h5>
+        
+         <p style="  margin-top:0px;text-align: center; color: lightslategray; opacity: 0.7; font-size: 1.1em;">Lorem ipsum dolor sit consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+        <a style="color: #9BB569; border-bottom: 2px solid #9BB569;">read more</a>
+        </div>
+     
+       
+        <div class="col s2" style="width: 300px; background-color: #f2f2f2; padding:0% 3% 2% 3%; margin-left: 2%;margin-top: 40px;" >
+          <div  style="padding:10px;background-color: #ffbd1a; border-radius: 200%; width:70px;  margin-left: 37%; margin-top: -28px;"> <img src="./Assets/star.png" height="40px"/></div>
+          <h5>GRAPHIC DESIGN</h5>
+          <p style="  margin-top:0px;text-align: center; color: lightslategray; opacity: 0.7; font-size: 1.1em; ">Lorem ipsum dolor sit consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+          <a style="color: #9BB569; border-bottom: 2px solid #9BB569;">read more</a> 
+        </div>
+        
+         <div class="col s2" style="width: 300px; background-color: #f2f2f2; padding: 0% 3% 2% 3%; margin-left: 2%; margin-top: 40px;" >
+          <div  style="padding:10px;background-color: #ffbd1a; border-radius: 200%; width:70px;  margin-left: 37%; margin-top: -28px;"> <img src="./Assets/star.png" height="40px"/></div>
+
+          <h5>BRANDING</h5>
+         
+          <p style="  margin-top:0px;text-align: center; color: lightslategray; opacity: 0.7; font-size: 1.1em;">Lorem ipsum dolor sit consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+          <a style="color: #9BB569; border-bottom: 2px solid #9BB569;">read more</a> 
+        </div>
+         
+        <div class="col s2" style="width: 300px; background-color: #f2f2f2; padding: 0% 3% 2% 3%; margin-left: 2%; margin-top: 40px;" >
+          <div  style="padding:10px;background-color: #ffbd1a; border-radius: 200%; width:70px;  margin-left: 37%; margin-top: -28px;"> <img src="./Assets/star.png" height="40px"/></div>
+
+          <h5>MARKETING</h5>
+          <p style="  margin-top:0px;text-align: center; color: lightslategray; opacity: 0.7; font-size: 1.1em;">Lorem ipsum dolor sit consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+          <a style="color: #9BB569; border-bottom: 2px solid #9BB569;">read more</a> 
+        </div>
+      </div>
+
+    </section>
+
+    <section style="background-color: black;" id="PORTFOLIO">
+      <h1 class="ourAdvantages">
+       <span style="color: #ffffff;"> OUR </span><span style="color: #668e19">PORTFOLIO</span>
+      </h1>
+      <P style="text-align: center; color: #ffffff; font-size: 20px;">Lorem ipsum dolar sit ament, consetture sadipscing elitr, sed diam nonumy eirmod </br> tempor invidunt ut labore et dolore magna aliquyam erat</P>
+        <div style="text-align: center; ">
+          <div style="display: inline;">
+           <a href="#" class="portfolio_anchor" style="color:#ffffff; text-align: center; margin-right: 2%;">WEB DESIGN</a>
+           <a href="#" class="portfolio_anchor" style="color:#ffffff; text-align: center; margin-right: 2%;">GRAPHIC DESIGN</a>
+           <a href="#" class="portfolio_anchor" style="color:#ffffff; text-align: center; margin-right: 2%;">BRANDING</a>
+        </div>
+        <div style="display: inline;">
+          <a href="#" class="portfolio_anchor" style="color:#ffffff; text-align: center; margin-right: 2%;">Logo</a>
+          <a href="#" class="portfolio_anchor" style="color:#ffffff; text-align: center; margin-right: 2%;">MARKETING</a>
+          <a href="#" class="portfolio_anchor" style="color:#ffffff; text-align: center; margin-right: 2%;">ADVERTISMENT</a>
+        </div>
+      <div>
+        <div style="margin-top: 2%;">
+          <img class="portfolio" src="Assets/horse.png" width="170px"/>
+          <img class="portfolio" src="Assets/horse.png" width="170px"/>
+          <img class="portfolio" src="Assets/horse.png" width="170px"/>
+          <img class="portfolio" src="Assets/horse.png" width="170px"/>
+          <img class="portfolio" src="Assets/horse.png" width="170px"/>
+        </div>
+        <div>
+          <img class="portfolio" src="Assets/horse.png" width="170px"/>
+          <img class="portfolio" src="Assets/horse.png" width="170px"/>
+          <img class="portfolio" src="Assets/horse.png" width="170px"/>
+          <img class="portfolio" src="Assets/horse.png" width="170px"/>
+          <img class="portfolio" src="Assets/horse.png" width="170px"/>
+        </div>
+      </div>
+    </section>
+    <section class="PROCESS" id="PROCESS">
+      <h1 class="ourAdvantages">
+        OUR <span style="color: #668e19">PROCESS</span>
+      </h1>
+      <P style="text-align: center; color: lightslategray; opacity: 0.7; font-size: 20px;">Lorem ipsum dolar sit ament, consetture sadipscing elitr, sed diam nonumy eirmod </br> tempor invidunt ut labore et dolore magna aliquyam erat</P>
+  
+      <div class="row" style="text-align: center !important; margin-left: 14%;">
+        <div style="width: 150px;" class="col s2">
+          <div style="border-radius: 200%; border: 2px solid lightslategray; padding: 35px; ">
+            <img src="./Assets/msg.png" width="60px"/>
+          </div>
+          <h6>REQUEST CELL</h6>
+          <P style="color: lightslategray;">Lorem ipsum dolor sit amet consetetur</P>
+        </div>
+      <div class="col s1" style="height: 3px; background-color: lightslategray; width: 50px;text-align: center;margin-top: 60px; margin-left: -13px; margin-right: -13px; "></div>
+     <div class="row" style="text-align: center !important;  margin-left: 8%;">
+        <div style="width: 150px;" class="col s2">
+          <div style="border-radius: 200%; border: 2px solid lightslategray; padding: 35px; ">
+            <img src="./Assets/msg.png" width="60px"/>
+          </div>
+          <h6>REQUEST CELL</h6>
+          <P style="color: lightslategray;">Lorem ipsum dolor sit amet consetetur</P>
+      </div>
+      <div class="col s1" style="height: 3px; background-color: lightslategray; width: 50px;text-align: center;margin-top: 60px; margin-left: -13px; margin-right: -13px; "></div>
+      <div class="row" style="text-align: center !important;  margin-left: 8%;">
+        <div style="width: 150px;" class="col s2">
+          <div style="border-radius: 200%; border: 2px solid lightslategray; padding: 35px; ">
+            <img src="./Assets/msg.png" width="60px"/>
+          </div>
+          <h6>REQUEST CELL</h6>
+          <P style="color: lightslategray;">Lorem ipsum dolor sit amet consetetur</P>
+      </div>
+      <div class="col s1" style="height: 3px; background-color: lightslategray; width: 50px;text-align: center;margin-top: 60px; margin-left: -13px; margin-right: -13px; "></div>
+      <div class="row" style="text-align: center !important;  margin-left: 8%;">
+        <div style="width: 150px;" class="col s2">
+          <div style="border-radius: 200%; border: 2px solid lightslategray; padding: 35px; ">
+            <img src="./Assets/msg.png" width="60px"/>
+          </div>
+          <h6>REQUEST CELL</h6>
+          <P style="color: lightslategray;">Lorem ipsum dolor sit amet consetetur</P>
+      </div>
+      <div class="col s1" style="height: 3px; background-color: lightslategray; width: 50px;text-align: center;margin-top: 60px; margin-left: -13px; margin-right: -13px; "></div>
+      <div class="row" style="text-align: center !important;  margin-left: 8%;">
+        <div style="width: 150px;" class="col s2">
+          <div style="border-radius: 200%; border: 2px solid lightslategray; padding: 35px; ">
+            <img src="./Assets/msg.png" width="60px"/>
+          </div>
+          <h6>REQUEST CELL</h6>
+          <P style="color: lightslategray;">Lorem ipsum dolor sit amet consetetur</P>
+      </div>
+      <div class="col s1" style="height: 3px; background-color: lightslategray; width: 50px;text-align: center;margin-top: 60px; margin-left: -13px; margin-right: -13px; "></div>
+      <div class="row" style="text-align: center !important;  margin-left: 8%;">
+        <div style="width: 150px;" class="col s2">
+          <div style="border-radius: 200%; border: 2px solid lightslategray; padding: 35px; ">
+            <img src="./Assets/msg.png" width="60px"/>
+          </div>
+          <h6>REQUEST CELL</h6>
+          <P style="color: lightslategray;">Lorem ipsum dolor sit amet consetetur</P>
+      </div>
+     
+      </div>
+    </section>
+    <section class="Slider" id="REVIEWS">
+     
+      <div
+        class="carousel carousel-slider center"
+        style="height: 500px !important"
+      >
+     
+        <div class="carousel-fixed-item center">
+          <div  style="margin-top: -400px;">
+          <h1 class="ourAdvantages">
+            PEOPLE <span style="color: #668e19">ABOUT US</span>
+          </h1>
+          <P style="text-align: center; color: #ffffff; font-size: 20px;">Lorem ipsum dolar sit ament, consetture sadipscing elitr, sed diam nonumy eirmod </br> tempor invidunt ut labore et dolore magna aliquyam erat</P>
+
+        </div>
+          <!-- <a
+            class="btn waves-effect white grey-text darken-text-2"
+            style="
+              background-color: #ffbd1a !important;
+              color: #000000 !important;
+              font-weight: 700 !important;
+              border-bottom: 2px solid #ffbd1a;
+            "
+            >READ MORE</a
+          > -->
+        </div>
+        <div
+          class="carousel-item red white-text"
+          href="#one!"
+          style="background-image: url('./Assets/slider4.jpg');  background-attachment:fixed;
+        background-repeat: no-repeat;
+        background-size: cover;"
+        ></div>
+        <div class="carousel-item amber white-text" href="#two!"
+        style="background-image: url('./Assets/slider5.jpg');  background-attachment:fixed;
+        background-repeat: no-repeat;
+        background-size: cover;"></div>
+        <div class="carousel-item green white-text" href="#three!"
+        style="background-image: url('./Assets/slider6.jpg');  background-attachment:fixed;
+        background-repeat: no-repeat;
+        background-size: cover;"></div>
+      </div>
+    </section>
+    <section id="skills">
+      <h1 class="ourAdvantages">
+        OUR <span style="color: #668e19">SKILLS</span>
+      </h1>
+      <P style="text-align: center; color: lightslategray; opacity: 0.7; font-size: 20px;">Lorem ipsum dolar sit ament, consetture sadipscing elitr, sed diam nonumy eirmod </br> tempor invidunt ut labore et dolore magna aliquyam erat</P>
+      <div class="row" style="text-align: center !important; margin-left: 20%;">
+        <div style="width: 150px;margin-left: 40px;" class="col s2">
+        <img src="./Assets//YELLOWMETER.png" width="125px"/>
+        </div>
+        <div style="width: 150px; margin-left: 40px;" class="col s2">
+          <img src="./Assets/redmeter.png"  />
+          <h6>SEO & ADS</h6>
+          </div>
+          <div style="width: 150px; margin-left: 40px;" class="col s2">
+            <img src="./Assets/greenmeter.png" />
+            <h6>BRANDING</h6>
+            </div>
+            <div style="width: 150px; margin-left: 40px;" class="col s2">
+              <img src="./Assets/blackmeter.png" />
+              <h6>WEB DESIGN</h6>
+              </div>
+      </div>
+    </section>
+   <section style="background-color: #668e19; padding:10px 0px 10px 0px">
+    <h1 class="ourAdvantages" style="color: #ffffff;">
+     START YOUR NEW PROJECT
+    </h1>   
+  <div style="margin-left: 15%;">
+    <form>
+    <input   type="text" style="background-color: #ffffff; width: 200px; height: 25px; padding: 5px 0px 5px 10px;" placeholder="YOUR NAME"/>
+    <input   type="email" style="background-color: #ffffff; width: 200px; height: 25px; padding: 5px 0px 5px 10px; margin-left: 30px;" placeholder="YOUR EMAIL"/>
+    <input   type="email" style="background-color: #ffffff; width: 200px; height: 25px; padding: 5px 0px 5px 10px;  margin-left: 30px;" placeholder="Yor PHONE"/>
+    <a
+    class="btn waves-effect white grey-text darken-text-2"
+    style="
+      background-color: #ffbd1a !important;
+      color: #000000 !important;
+      font-weight: 700 !important;
+      border-bottom: 2px solid #ffbd1a;
+      margin-top: -8px;
+      margin-left: 50px;
+    "
+    >SEND REQUEST</a
+  >
+</form>
+  </div>
+  <P style="text-align: center; color: #ffffff; font-size: 20px;">Lorem ipsum dolar sit ament, consetture sadipscing elitr, sed diam nonumy eirmod </br> tempor invidunt ut labore et dolore magna aliquyam erat</P>
+
+</section>
+<section id="contacts">
+  <h1 class="ourAdvantages">
+    OUR <span style="color: #668e19">CONTACTS</span>
+  </h1>
+  <P style="text-align: center; color: lightslategray; opacity: 0.7; font-size: 20px;">Lorem ipsum dolar sit ament, consetture sadipscing elitr, sed diam nonumy eirmod </br> tempor invidunt ut labore et dolore magna aliquyam erat</P>
+<div style="text-align: center;"><img src="./Assets//location.png" style="margin-bottom: -10px;" /> <span style="font-size: 28px;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod </span> </div>
+<div style="text-align: center;"><img src="./Assets/phoneContact.png" width="20px" /> <span style="font-size: 28px;">(304) 386-6719</span> <span style=" margin-left: 50px;"><img src="./Assets/phoneContact.png" width="20px" /> <span style="font-size: 28px;">(304) 386-6719</span> </span><span style=" margin-left: 50px;"><img src="./Assets/messageContact.png" width="20px" /> <span style="font-size: 28px;">(304) 386-6719</span> </span>  </div>
+<img src="./Assets/map.png" style=" max-width: 100%;
+height: auto;" />
+</section>
+<section class="footer" style=" background-color: #668e19 ; padding-top: 2%; padding-bottom: 2%; margin-top: -20px;">
+  <div class="row" style="text-align: left !important; margin-left:8%; ">
+    <div  class="col s3" style="padding-right:6%;">
+      <img src="./Assets//logos.png" width="150px"/>
+      <p  style="color: #ffffff; text-align: left;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempr invidunt ut labore at dolore manfna aliquyam erat, sed diamvlouptua</p>
+   <p style="color: #ffffff; text-align: left; margin-top: 20px;">Ⓒ	Panacloud 2019</p>
+    </div>
+    <div  class="col s2" style=" color: #ffffff; border-right: 1px solid #ffffff;">
+        <h5 style="margin-top: 0px;"><b>SERVICES</b></h5>
+          <div style="margin-top: 15%;">
+       <a style="color: #ffffff; text-decoration: underline;">Lorem Ipsum</a><br/>
+      </div>
+      <div style="margin-top: 5%;">
+         <a style="color: #ffffff; text-decoration: underline;">Lorem </a><br/>
+         </div> <div style="margin-top: 3%;"><a style="color: #ffffff; text-decoration: underline;">Lorem Ipsum Dolor</a><br/></div>
+        <div style="margin-top: 3%;"> <a style="color: #ffffff; text-decoration: underline;">Lorem Ipsum</a><br/></div>
+        <div style="margin-top: 3%;"><a style="color: #ffffff; text-decoration: underline;">Lorem </a><br/></div>
+          <div style="margin-top: 3%;"> <a style="color: #ffffff; text-decoration: underline;">Lorem Ipsum Dolor</a><br/></div>
+       <div style="margin-top: 3%;"><a style="color: #ffffff; text-decoration: underline;">Lorem Ipsum Dolor</a><br/></div>
+    </div>
+    
+    <div  class="col s1" ></div>
+    <div  class="col s2" style=" color: #ffffff; border-right: 1px solid #ffffff;">
+      <h5 style="margin-top: 0px;"><b>USEFUL LINKS</b></h5>
+        <div style="margin-top: 15%;">
+     <a style="color: #ffffff; text-decoration: underline;">Lorem Ipsum</a><br/>
+    </div>
+    <div style="margin-top: 5%;">
+       <a style="color: #ffffff; text-decoration: underline;">Lorem </a><br/>
+       </div> <div style="margin-top: 3%;"><a style="color: #ffffff; text-decoration: underline;">Lorem Ipsum Dolor</a><br/></div>
+      <div style="margin-top: 3%;"> <a style="color: #ffffff; text-decoration: underline;">Lorem Ipsum</a><br/></div>
+      <div style="margin-top: 3%;"><a style="color: #ffffff; text-decoration: underline;">Lorem </a><br/></div>
+        <div style="margin-top: 3%;"> <a style="color: #ffffff; text-decoration: underline;">Lorem Ipsum Dolor</a><br/></div>
+     <div style="margin-top: 3%;"><a style="color: #ffffff; text-decoration: underline;">Lorem Ipsum Dolor</a><br/></div>
+  </div>
+  <div  class="col s1" ></div>
+  <div  class="col s2" style=" color: #ffffff;">
+    <h5 style="margin-top: 0px;"><b>CONTACTS</b></h5>
+    
+  <div style="margin-top: 5%;">
+      <img src="./Assets/phoneWhite.png" width="12px"/><span style="margin-left: 10px;" class="phoneNumber">+92(304)386-6719</span>
+     </div><div style="margin-top: 5%;">
+      <img src="./Assets/phoneWhite.png" width="12px"/><span style="margin-left: 10px;" class="phoneNumber">+92(317)011-3001</span>
+     </div>
+     <div style="margin-top: 5%;">
+     <img src="./Assets/messageWhite.png" width="15px"/><span style="margin-left: 10px;" class="phoneNumber">info@website.com</span>
+    </div> 
+    <h5 style="margin-top: 40px;"><b>FOLLOW US</b></h5>
+    <img src="./Assets/socialIcons (2).png" width="150px" style="margin-top: 20px;"/>
+   </div>
+</div>
+
+
+  
+  </div>
+
+</section>
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+      });
+      $(".carousel.carousel-slider").carousel({
+        fullWidth: true,
+        indicators: true,
+      });
+      autoplay();
+      function autoplay() {
+        $(".carousel").carousel("next");
+        setTimeout(autoplay, 3000);
+      }
+    </script>
+  </body>
+</html>
